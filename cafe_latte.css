@@ -1,0 +1,280 @@
+ body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    
+ } 
+    
+ h2{
+   font-family: 'Almarai', sans-serif;
+ 
+ }
+
+
+ .container{
+    
+    width: 70%;
+    min-height: 60vh;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns:1fr 3fr;
+    grid-template-rows:2fr 1fr;
+    border: 1.8px solid;
+     
+    
+ }
+ .container >*{
+   font-size: 1.0.8rem;
+   font-weight: bold;
+   font-family: 'Almarai', sans-serif;
+  
+ }
+ @media(max-width:1100px) {
+   .container{
+      font-size: 0.9rem;
+   }
+ 
+
+    
+   
+   
+ }
+ @media (max-width:650px) {
+   
+   .container{
+       min-width:100%;
+       font-size: 0.85rem;
+   }  
+   
+   
+   .btn>a{
+      font-size: 0.6rem;
+   }
+}
+ @media(max-width:500px){
+   .container{
+      font-size: 0.6rem;
+   }
+ }
+ @media(max-width:300px){
+   .container{
+      font-size: 0.45rem ;
+   }
+
+ }
+
+
+ .head{
+    background-color: rgb(115, 177, 202);
+    display:grid;
+    grid-template-rows:1.5fr 7.5fr;
+ }
+ .head>div{
+    border:1px solid;
+   
+ }
+ .head .up-row{
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr repeat(4,1fr);
+
+ }
+ .head .up-row >div,
+ .head .down-row >div{
+    border-right: 1px solid;
+    border-left: 1px solid;
+ }
+
+ .head .down-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr repeat(4,1fr);
+    border-bottom: none;
+ }
+ 
+
+ .head .down-row .sugar-ice-c{
+    display: grid;
+    grid-template-rows:1fr 6.5fr;
+    
+   
+    
+    
+ }
+ .head .down-row .sugar-ice-c>div{
+    
+    border-bottom:1px solid black;
+    border-top:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+ }
+ .head .down-row .sugar-ice-c>div:first-child{
+    border-top: none;
+ }
+  
+ 
+ .head .down-row .ingre{
+    display: grid;
+    grid-template-rows:1fr 2fr 1fr 1.5fr 2fr;
+   
+ }
+ .head .down-row .ingre>div{
+    border-bottom:1px solid;
+    border-top:1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+ }
+ 
+ .head .down-row > div.mc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid;
+ }
+ .head .down-row .ingre>div:first-child{
+    border-top: none;
+ }
+
+ .up-row>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+ }
+
+
+
+p{
+    margin:0;
+}
+ .side{
+    background-color: rgb(115, 177, 202);
+    display:grid;
+    grid-template-rows:1.5fr repeat(4,1fr) 1.5fr 2fr;
+    
+ }
+ .side>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid;
+    border-right: none;
+ }
+ .container .bottom  {
+    display: grid;
+    grid-template-rows: 1.5fr repeat(3,1fr);
+    background-color: rgb(207, 128, 191);
+    
+ }
+ 
+.container .left>div{
+   border:1px solid;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.bottom .bt-rOne{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr repeat(4,1fr);
+
+}
+.bottom .bt-rOne >div{
+   border:1px solid;
+}
+.bottom .bt-rOne #double{
+   border-bottom: none;
+}
+.bottom .bt-rOne #double-up{
+   border-top:none;
+}
+.bottom .bt-rOne #double-side{
+   border-bottom:none;
+}
+.bottom .bt-rOne #double-down{
+   border-top:none;
+}
+
+.bottom .last-row{
+   border:1px solid;
+
+}
+.right .bt-rOne >div{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.right .last-row{
+   display: flex;
+   align-items: center;
+}
+.right #double-side{
+   display: flex;
+   align-items: end;
+}
+
+.container .side #red-color{
+   color:rgb(219, 7, 7);
+   border:1px solid black;
+   border-right: 0;
+}
+
+.container .head #red-color{
+   
+   color:rgb(219, 7, 7);
+   border-left:1px solid black;
+   border-right: 1px solid black;
+    
+}
+ 
+ 
+.container .head .down-row .ingre #red-color{
+  
+   color:rgb(219, 7, 7);   
+  border-top:1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 0;
+  border-right: 0;
+  
+}
+.container .bottom #red-color{
+   color:rgb(219, 7, 7);  
+   border:1px solid black;
+ 
+}
+.bottom #aa{
+   color:rgb(219, 7, 7);  
+   border:1px solid black;
+   padding-left: 10px;
+}
+ 
+.btn{
+   background-color: rgb(207, 204, 204);
+   border-style:none;
+   border-radius: 10px;
+   width: 80px;
+   height: 30px;
+   align-self: center;
+   font-weight: bold;
+   margin-top:2%;
+   
+ }
+ .btn>a{
+   color:black;
+   text-decoration: none;
+ }
+ .btn:hover{
+   background-color: rgb(204, 85, 151);
+ 
+ }
+ 
+ 
+  
